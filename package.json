@@ -6,28 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "nyc mocha"
-  },
-  "nyc": {
-    "include": [
-      "lib/**/*.ts"
-    ],
-    "extension": [
-      ".ts"
-    ],
-    "exclude": [
-      "**/*.d.ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ],
-    "reporter": [
-      "text",
-      "text-summary",
-      "lcov"
-    ],
-    "sourceMap": true,
-    "instrument": true
+    "test": "nyc mocha",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
